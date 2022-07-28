@@ -1,0 +1,9 @@
+*
+!/CMakeList.txt
+!/logs.h
+!/logs.c
+!/test.c
+
+!/*git
+!/LICENSE
+!/README.md
