@@ -129,7 +129,7 @@ int main(void)
 
 output (`logs.txt`):
 
-```c
+```
 Thu Jul 28 15:29:09 2022
 in line - 6
 START PROGRAM!
