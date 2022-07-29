@@ -2,7 +2,7 @@
 !/CMakeList.txt
 !/logs.h
 !/logs.c
-!/test.c
+!/example.c
 
 !/*git
 !/LICENSE
