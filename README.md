@@ -1,4 +1,4 @@
-# logs
+# c-logs
 
 ## Instruction
 
