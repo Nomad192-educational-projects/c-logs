@@ -1,9 +1,6 @@
 cmake_minimum_required(VERSION 3.22)
-project(my_logging)
+project(_logs LANGUAGES C VERSION 1.0.0)
+set(CMAKE_C_STANDARD 90)
+set(CMAKE_BUILD_TYPE Release)
 
-set(CMAKE_C_STANDARD 99)
-
-add_executable(my_logging
-        test.c
-        logs.c
-        logs.h)
+add_library(${PROJECT_NAME} logs.c)
