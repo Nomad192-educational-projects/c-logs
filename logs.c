@@ -61,7 +61,7 @@ LOGS *quick_start(const char *file_name)
     return logs;
 }
 
-LOGS *full_start(const char *file_name, enum Level level, bool is_clear_log_file,  bool open_file_every_time)
+LOGS *full_start(const char *file_name, enum Level level, bool w_time, bool is_clear_log_file,  bool open_file_every_time)
 {
     {
         FILE *file = fopen(file_name, "a");
@@ -74,6 +74,7 @@ LOGS *full_start(const char *file_name, enum Level level, bool is_clear_log_file
     if(!logs->file_name) { free(logs); return NULL;}
     logs->level = level;
     if(is_clear_log_file) clear_log_file(logs);
+    logs->w_time = w_time;
     return logs;
 }
 

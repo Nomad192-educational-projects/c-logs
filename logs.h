@@ -23,7 +23,7 @@ typedef struct logs_t
 } LOGS;
 
 LOGS *quick_start(const char *file_name);
-LOGS *full_start(const char *file_name, enum Level level, bool is_clear_log_file,  bool open_file_every_time);
+LOGS *full_start(const char *file_name, enum Level level, bool w_time, bool is_clear_log_file,  bool open_file_every_time);
 
 void lclose(LOGS *);
 

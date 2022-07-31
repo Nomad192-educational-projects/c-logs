@@ -9,11 +9,12 @@ Returned `LOGS *`, `NULL` - in case of an error.
 **full_start**
 
 ```c
-LOGS *full_start(const char *file_name, enum Level level, bool is_clear_log_file,  bool open_file_every_time)
+LOGS *full_start(const char *file_name, enum Level level, bool w_time, bool is_clear_log_file,  bool open_file_every_time)
 ```
 * `level` - logging level
 * `is_clear_log_file` - clear the file before use
 * `open_file_every_time` - reopen the file every time logging (it will slow down the program, but data is more likely to be saved during a crash)
+* `w_time` - display the time every time
 
 Example:
 ```c
